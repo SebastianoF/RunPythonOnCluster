@@ -1,5 +1,6 @@
 #!/bin/bash
 
-# path to virtual env, to run python:
-/home/ferraris/py_venvs/v2/bin/python main/main.py -i $SUBJECT
+# path to your selected python interpreter located on the cluster.
+# e.g. /home/ferraris/py_venvs/v2/bin/python
+python main/main.py -i $SUBJECT
 
