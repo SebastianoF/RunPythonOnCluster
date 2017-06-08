@@ -1,4 +1,4 @@
-### PythonOnCluster
+### RunPythonOnCluster
 
 Simple skeleton to interface python code and the cluster, submitting python code with nohup and qsub command.
 Run with 
