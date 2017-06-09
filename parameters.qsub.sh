@@ -1,7 +1,7 @@
 date
 hostname
 
-#$ -l h_rt=00:2:00
+#$ -l h_rt=00:01:00
 #$ -l tmem=2G
 #$ -l h_vmem=2G
 #$ -N "SimpleTest"
