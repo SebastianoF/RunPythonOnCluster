@@ -9,8 +9,6 @@ hostname
 #$ -cwd
 #$ -t 1-10
 
-MYSUBJECT=`sed -n ${SGE_TASK_ID}p subjects.txt`
-# echo text $SGE_TASK_ID
-# echo $MYSUBJECT
+MYSUBJECT=`sed -n ${SGE_TASK_ID}p job_parameters.txt`
 
 ./run_python.sh $MYSUBJECT
