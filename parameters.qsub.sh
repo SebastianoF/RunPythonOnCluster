@@ -8,6 +8,8 @@ hostname
 #$ -S /bin/bash
 #$ -cwd
 #$ -t 1-10
+#$ -e ../z_output/
+#$ -o ../z_output/
 
 MYSUBJECT=`sed -n ${SGE_TASK_ID}p job_parameters.txt`
 
