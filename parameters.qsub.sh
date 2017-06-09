@@ -7,10 +7,10 @@ hostname
 #$ -N "SimpleTest"
 #$ -S /bin/bash
 #$ -cwd
-#$ -t 1..10
+#$ -t 1-10
 
 MYSUBJECT=`sed -n ${SGE_TASK_ID}p subjects.txt`
 # echo text $SGE_TASK_ID
 # echo $MYSUBJECT
 
-run_python.sh $MYSUBJECT
+./run_python.sh $MYSUBJECT
