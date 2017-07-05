@@ -13,7 +13,6 @@ sys.path.append(os.path.dirname(dir_path))  # add the code directory /simple_clu
 
 from subordinate.auxiliary import say_hello
 
-
 parser = argparse.ArgumentParser()
 
 parser.add_argument('-i',

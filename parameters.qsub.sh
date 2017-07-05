@@ -13,4 +13,13 @@ hostname
 
 MYSUBJECT=`sed -n ${SGE_TASK_ID}p job_parameters.txt`
 
-./run_python.sh $MYSUBJECT
+export PATH=/share/apps/fsl-5.0.8/bin/:${PATH}
+export PATH=/home/ferraris/software_lib/NiftyFit2/niftyfit-build/fit-apps/:${PATH}
+export LD_LIBRARY_PATH=/share/apps/cmic/NiftyMIDAS/bin/:${LD_LIBRARY_PATH}
+
+EXEC=/home/ferraris/py_venvs/v2/bin/python
+CALLER=main/main.py
+
+echo $EXEC $CALLER -i $MYSUBJECT
+
+$EXEC $CALLER -i $MYSUBJECT
